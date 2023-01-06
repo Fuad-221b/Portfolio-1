@@ -7,7 +7,7 @@
 /* A problem may arise at header margin */
 header {
     background: #FFF8F3;
-    background-image: url(images/header_bg.png), url('images/developer.png');
+    background-image: url('images/header_bg.png'), url('images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
 }
@@ -217,4 +217,20 @@ main {
 .btn{
     text-align: center;
     margin-bottom: 130px;
+}
+footer{
+    margin: 50px 225px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFF8F3;
+    height:780px;
+    padding: 117px 148px 145px 165px;
+}
+.footer-title{
+    margin-bottom:20px;
+    font-size: 35px;
+    line-height: 48px;
+}
+.footer-description{
+    margin-bottom:30px;
 }
