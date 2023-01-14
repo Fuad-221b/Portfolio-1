@@ -102,13 +102,13 @@ main {
     margin-bottom: 30px;
 }
 
-.sec-content {
+/* .sec-content { 
     font-size: 18px;
     color: #757575;
     margin-bottom: 30px;
     text-align: center;
 }
-
+*/
 /* Go to css cheat sheet */
 
 .about-info-container {
@@ -133,7 +133,7 @@ main {
     text-align: center;
     color: #474747;
 }
-
+/* what i do styles */
 .Wid {
     text-align: center;
     margin-bottom: 50px;
@@ -169,10 +169,6 @@ main {
     font-size: 16px;
     color: #757575;
 }
-
-.summary-of-resume{
-    
-}
 .resume-title{
     text-align: center;
     font-size: 35px;
@@ -193,7 +189,6 @@ main {
 }
 .degree, .job{
     margin-bottom: 60px;
-    
 }
 .degree-title, .designation{
     font-size: 25px;
@@ -261,4 +256,61 @@ input{
 .contact-description, .contact form{
     margin-top: 10px;
     margin-bottom: 20px;
+}
+/* responsive styles */
+@media screen and (max-width:576px) {
+    header{
+        background-image: none;
+        margin-bottom: 20px;
+    }
+    nav{
+        flex-direction: column;
+        margin:0 0 10px 0;
+    }
+     nav ul{
+        flex-direction: column;
+    }
+    .intro img{
+        width:100%;
+    }
+    .intro{
+        flex-direction: column;
+        margin:0 0 0 10px;
+    }
+    .a-m{
+        padding: 10px;
+    }
+    .sec-content{
+        margin-bottom: 5px;
+    }
+    .about-info-container{
+        flex-direction: column;
+        gap:10px;
+        padding: 10px;
+    }
+    .about-info{
+        margin-left: 0;
+    }
+    .skills-container, .resume-description, .contact{
+        flex-direction: column;
+        padding:10px 10px;
+    }
+    .skill-description{
+        flex:1;
+    }
+    .skill{
+        margin-bottom: 5px;
+    }
+    .degree, .job {
+        margin-bottom: 15px;
+    }
+    .contact input[type="text"],input[type="email"], textarea{
+        padding:0 0 0 5px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    
+}
+.hide{
+    display: none;
 }
